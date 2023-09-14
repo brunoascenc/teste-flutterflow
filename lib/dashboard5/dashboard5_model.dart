@@ -1,5 +1,5 @@
+import '/components/newcolyumn_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -8,7 +8,6 @@ import '/home/components/forms/forms_widget.dart';
 import '/home/components/header/header_widget.dart';
 import '/home/components/mainheader/mainheader_widget.dart';
 import '/home/components/tasks/tasks_widget.dart';
-import '/flutter_flow/random_data_util.dart' as random_data;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -25,6 +24,8 @@ class Dashboard5Model extends FlutterFlowModel {
   late MainheaderModel mainheaderModel;
   // Model for tasks component.
   late TasksModel tasksModel;
+  // Model for newcolyumn component.
+  late NewcolyumnModel newcolyumnModel;
   // Model for forms component.
   late FormsModel formsModel;
 
@@ -34,6 +35,7 @@ class Dashboard5Model extends FlutterFlowModel {
     headerModel = createModel(context, () => HeaderModel());
     mainheaderModel = createModel(context, () => MainheaderModel());
     tasksModel = createModel(context, () => TasksModel());
+    newcolyumnModel = createModel(context, () => NewcolyumnModel());
     formsModel = createModel(context, () => FormsModel());
   }
 
@@ -42,6 +44,7 @@ class Dashboard5Model extends FlutterFlowModel {
     headerModel.dispose();
     mainheaderModel.dispose();
     tasksModel.dispose();
+    newcolyumnModel.dispose();
     formsModel.dispose();
   }
 
