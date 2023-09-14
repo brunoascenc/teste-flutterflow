@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/home/components/forms/forms_widget.dart';
 import '/home/components/header/header_widget.dart';
 import '/home/components/mainheader/mainheader_widget.dart';
 import '/home/components/tasks/tasks_widget.dart';
@@ -24,15 +25,8 @@ class Dashboard5Model extends FlutterFlowModel {
   late MainheaderModel mainheaderModel;
   // Model for tasks component.
   late TasksModel tasksModel;
-  // State field(s) for TextField widget.
-  TextEditingController? textController1;
-  String? Function(BuildContext, String?)? textController1Validator;
-  // State field(s) for TextField widget.
-  TextEditingController? textController2;
-  String? Function(BuildContext, String?)? textController2Validator;
-  // State field(s) for TextField widget.
-  TextEditingController? textController3;
-  String? Function(BuildContext, String?)? textController3Validator;
+  // Model for forms component.
+  late FormsModel formsModel;
 
   /// Initialization and disposal methods.
 
@@ -40,6 +34,7 @@ class Dashboard5Model extends FlutterFlowModel {
     headerModel = createModel(context, () => HeaderModel());
     mainheaderModel = createModel(context, () => MainheaderModel());
     tasksModel = createModel(context, () => TasksModel());
+    formsModel = createModel(context, () => FormsModel());
   }
 
   void dispose() {
@@ -47,9 +42,7 @@ class Dashboard5Model extends FlutterFlowModel {
     headerModel.dispose();
     mainheaderModel.dispose();
     tasksModel.dispose();
-    textController1?.dispose();
-    textController2?.dispose();
-    textController3?.dispose();
+    formsModel.dispose();
   }
 
   /// Action blocks are added here.
