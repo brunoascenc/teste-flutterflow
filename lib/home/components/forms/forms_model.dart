@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 class FormsModel extends FlutterFlowModel {
   ///  State fields for stateful widgets in this component.
 
+  final formKey = GlobalKey<FormState>();
   // State field(s) for TextField widget.
   TextEditingController? textController1;
   String? Function(BuildContext, String?)? textController1Validator;
